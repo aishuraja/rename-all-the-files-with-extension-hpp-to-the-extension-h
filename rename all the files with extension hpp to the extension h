@@ -1,0 +1,9 @@
+filenames = ["program.c", "stdio.hpp", "sample.hpp", "a.out", "math.hpp", "hpp.out"]
+newfilenames = []
+for oldfilename in filenames:
+  if ".hpp" in oldfilename:
+    newfilenames.append((oldfilename,oldfilename.replace(".hpp",".h")))
+  else:
+    newfilenames.append((oldfilename,oldfilename))
+
+print (newfilenames) 
